@@ -46,21 +46,21 @@ export default function Home() {
             isOnline={true}
             name="Amanda Schutz"
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
-            image="assets/test3.jpg"
+            image="/assets/test3.jpg"
             price="R$29,00"
           />
           <ModelCard
             isOnline={true}
             name="Larissa Silva"
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
-            image="assets/test8.jpg"
+            image="/assets/test8.jpg"
             price="R$49,00"
           />
           <ModelCard
             isOnline={false}
             name="Julia Silva"
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
-            image="assets/test2.jpg"
+            image="/assets/test2.jpg"
             price="R$49,00"
           />
 
@@ -68,28 +68,28 @@ export default function Home() {
             isOnline={true}
             name="Julia Silva"
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
-            image="assets/test7.jpg"
+            image="/assets/test7.jpg"
             price="R$49,00"
           />
           <ModelCard
             isOnline={true}
             name="Vanessa Lucrezia"
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
-            image="assets/test5.jpg"
+            image="/assets/test5.jpg"
             price="R$39,00"
           />
           <ModelCard
             isOnline={false}
             name="Laisa Eduarda"
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
-            image="assets/test6.jpg"
+            image="/assets/test6.jpg"
             price="R$29,00"
           />
           <ModelCard
             isOnline={true}
             name="Gigi Amaral"
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
-            image="assets/test4.jpg"
+            image="/assets/test4.jpg"
             price="R$29,00"
           />
         </div>

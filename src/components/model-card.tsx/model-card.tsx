@@ -2,7 +2,6 @@ import { useState } from "react";
 import { AiFillHeart } from "react-icons/ai";
 import { BsFillSuitHeartFill } from "react-icons/bs";
 import toast, { Toaster } from 'react-hot-toast';
-import Image from "next/image"
 
 interface IModelCardProps {
     isOnline: boolean;
@@ -35,7 +34,7 @@ export default function ModelCard({ isOnline, name, whatsappLink, image, price }
                             </span>
                         </div>
                         <div className="relative">
-                            <Image className="h-52 w-56" src={image} alt="model image" />
+                            <img className="h-52 w-56" src={image} alt="model image" />
                             <div className="absolute top-2 right-2">
                                 <div className="rounded-full bg-black bg-opacity-50 p-2">
                                     <BsFillSuitHeartFill />
@@ -60,7 +59,7 @@ export default function ModelCard({ isOnline, name, whatsappLink, image, price }
                         </span>
                     </div>
                     <div className="relative">
-                        <Image className="h-52 w-56" src={image} alt="model image" />
+                        <img className="h-52 w-56" src={image} alt="model image" />
                         <div className="absolute top-2 right-2">
                             <div className="rounded-full bg-black bg-opacity-50 p-2">
                                 <BsFillSuitHeartFill />
