@@ -9,9 +9,10 @@ interface IModelCardProps {
     whatsappLink: string;
     image: string;
     price: string;
+    city: string;
 }
 
-export default function ModelCard({ isOnline, name, whatsappLink, image, price }: IModelCardProps) {
+export default function ModelCard({ isOnline, name, whatsappLink, image, price, city }: IModelCardProps) {
 
     const notify = () => toast.error("Escolhe uma modelo online.")
 
@@ -30,7 +31,7 @@ export default function ModelCard({ isOnline, name, whatsappLink, image, price }
                                 {name.split(" ")[0]}
                             </span>
                             <span className={`font-bold ${isOnline ? "text-lime-400" : "text-stone-400"}`}>
-                                {price}
+                                {city}
                             </span>
                         </div>
                         <div className="relative">
@@ -43,7 +44,7 @@ export default function ModelCard({ isOnline, name, whatsappLink, image, price }
                         </div>
                         <div className={`${isOnline ? "bg-lime-600" : "bg-stone-900"} flex justify-center py-1.5 rounded-b-md`}>
                             <p>
-                                {isOnline ? "Online" : "Offline"}
+                                {isOnline ? `Online - ${price}` : "Offline"}
                             </p>
                         </div>
                     </div>
@@ -55,7 +56,7 @@ export default function ModelCard({ isOnline, name, whatsappLink, image, price }
                             {name.split(" ")[0]}
                         </span>
                         <span className={`font-bold ${isOnline ? "text-lime-400" : "text-stone-400"}`}>
-                            {price}
+                            {city}
                         </span>
                     </div>
                     <div className="relative">
@@ -68,7 +69,7 @@ export default function ModelCard({ isOnline, name, whatsappLink, image, price }
                     </div>
                     <div className={`${isOnline ? "bg-lime-600" : "bg-stone-900"} flex justify-center py-1.5 rounded-b-md`}>
                         <p>
-                            {isOnline ? "Online" : "Offline"}
+                            {isOnline ? `Online - ${price}` : ("Offline")}
                         </p>
                     </div>
                 </div>

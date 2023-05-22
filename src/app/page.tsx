@@ -39,22 +39,40 @@ export default function Home() {
         </button>
       </div>
 
+      <div className="w-full bg-red-600 text-lg my-6">
+        <div className="p-4 flex justify-center">
+          <div>
+            <div className="flex justify-center items-center w-full">
+              Chamadas de vídeo íntimas.
+            </div>
+
+            <div className="flex justify-center text-1xl font-bold">
+              CONTEÚDO PAGO! (SOMENTE PIX)
+            </div>
+          </div>
+        </div>
+
+      </div>
+
       {selectedFilterOption === "Mulheres" ? (
         <div className="grid grid-cols-2 tablet:grid-cols-6">
 
-          <ModelCard
-            isOnline={true}
-            name="Amanda Schutz"
-            whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
-            image="/assets/test3.jpg"
-            price="R$29,00"
-          />
+
           <ModelCard
             isOnline={true}
             name="Larissa Silva"
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
             image="/assets/test8.jpg"
             price="R$49,00"
+            city="Florianópolis"
+          />
+          <ModelCard
+            isOnline={false}
+            name="Amanda Schutz"
+            whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
+            image="/assets/test3.jpg"
+            price="R$29,00"
+            city="São Paulo"
           />
           <ModelCard
             isOnline={false}
@@ -62,6 +80,7 @@ export default function Home() {
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
             image="/assets/test2.jpg"
             price="R$49,00"
+            city="Maringá"
           />
 
           <ModelCard
@@ -70,13 +89,15 @@ export default function Home() {
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
             image="/assets/test7.jpg"
             price="R$49,00"
+            city="Porto Alegre"
           />
           <ModelCard
             isOnline={true}
             name="Vanessa Lucrezia"
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
             image="/assets/test5.jpg"
-            price="R$39,00"
+            price="R$49,00"
+            city="Balneário"
           />
           <ModelCard
             isOnline={false}
@@ -84,13 +105,15 @@ export default function Home() {
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
             image="/assets/test6.jpg"
             price="R$29,00"
+            city="Florianópolis"
           />
           <ModelCard
             isOnline={true}
             name="Gigi Amaral"
             whatsappLink="https://api.whatsapp.com/send?phone=5547992479009&text=Oi,%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo%20com%20voc%C3%AA.%20Como%20posso%20fazer%20o%20pagamento?"
             image="/assets/test4.jpg"
-            price="R$29,00"
+            price="R$49,00"
+            city="São Paulo"
           />
         </div>
       ) : (
